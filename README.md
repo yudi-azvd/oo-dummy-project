@@ -1,14 +1,14 @@
-## Getting Started
+## OO Dummy Project
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Pra quem usa Visual Studio Code, vai facilitar baixar esse 
+[pack de extensões Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 
-## Folder Structure
+E seguir esse [tutorial](https://code.visualstudio.com/docs/java/java-tutorial)
+ pra montar um ambiente de desenvolvimento Java no VSCode.
 
-The workspace contains two folders by default, where:
+Se tudo der certo você deve ver algo assim no seu editor:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+<img src="./.github/screenshot.png">
 
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Então você vai poder rodar o projeto clicando em `Run` ou debugar clicando
+em `Debug` (dado que você adicionou breakpoints).
