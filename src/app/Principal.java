@@ -30,10 +30,10 @@ public class Principal {
           cadPf.cadastrarPessoaFisica();
           break;          
         }
-        // case 2: {
-        //   cadPf.cadastrarPessoaFisica();
-        //   break;          
-        // }
+        case 2: {
+          cadPf.pesquisarPessoaFisica();
+          break;          
+        }
         // case 3: {
         //   cadPf.cadastrarPessoaFisica();
         //   break;          
