@@ -29,6 +29,7 @@ public class CadastroPessoaFisica {
     return novaPessoa;
   }
 
+
   public PessoaFisica pesquisarPessoaFisica() {
     String cpf = JOptionPane.showInputDialog("Informe o CPF da pessoa física: ");
     PessoaFisica pf = null;
@@ -43,9 +44,14 @@ public class CadastroPessoaFisica {
       JOptionPane.showMessageDialog(optionPane, "Encontrado: " + pf.nome);
     }
     else {
-      JOptionPane.showMessageDialog(optionPane, "Não Encontrado", "Title", JOptionPane.ERROR_MESSAGE);
+      JOptionPane.showMessageDialog(optionPane, "Não Encontrado", "", JOptionPane.ERROR_MESSAGE);
     }
 
     return pf;
+  }
+
+
+  public boolean deletarPessoaFisica() {
+    return true;
   }
 }
