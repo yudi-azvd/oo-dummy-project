@@ -25,4 +25,25 @@ public class CadastroPessoaFisica {
 
     return novaPessoa;
   }
+
+
+  public boolean deletarPessoaFisica() {
+    boolean found = false;
+    String cpf = JOptionPane.showInputDialog("Informa o CPF da pessoa física: ");
+
+    // Uma cópia é feita mesmo que a pessoa não seja encontrada.
+    PessoaFisica[] tmp = new PessoaFisica[pfs.length-1];
+    for (int i = 0; i < pfs.length; i++) {
+      if (pfs[i].cpf.equals(cpf)) {
+        found = true;
+      }
+      else {
+        tmp[i] = pfs[i];
+      }
+    }
+
+    pfs = tmp;
+
+    return found;
+  }
 }

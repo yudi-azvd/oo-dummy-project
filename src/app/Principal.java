@@ -19,6 +19,7 @@ public class Principal {
       + "1) Cadastrar pessoa física\n"
       + "2) Pesquisar pessoa física\n"
       + "3) Editar pessoa física\n"
+      + "4) Deletar pessoa física\n"
       + "0) Sair\n\n";
 
     do {
@@ -34,10 +35,10 @@ public class Principal {
         //   cadPf.cadastrarPessoaFisica();
         //   break;          
         // }
-        // case 3: {
-        //   cadPf.cadastrarPessoaFisica();
-        //   break;          
-        // }
+        case 4: {
+          cadPf.deletarPessoaFisica();
+          break;          
+        }
         // ...
         default: {
           // JOptionPane.showMessageDialog("Opção indisponível.");
