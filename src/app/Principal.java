@@ -31,15 +31,18 @@ public class Principal {
           cadPf.cadastrarPessoaFisica();
           break;          
         }
-        // case 2: {
-        //   cadPf.cadastrarPessoaFisica();
+        case 2: {
+          cadPf.pesquisarPessoaFisica();
+          break;          
+        }
+        // case 3: {
+        //   cadPf.editarPessoaFisica();
         //   break;          
         // }
         case 4: {
           cadPf.deletarPessoaFisica();
           break;          
         }
-        // ...
         default: {
           // JOptionPane.showMessageDialog("Opção indisponível.");
         }

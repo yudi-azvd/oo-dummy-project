@@ -1,9 +1,12 @@
 package cadastros;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class CadastroPessoaFisica {
   private PessoaFisica[] pfs;
+  private JFrame optionPane;
+
 
   public CadastroPessoaFisica() {
     pfs = new PessoaFisica[0];
@@ -27,6 +30,27 @@ public class CadastroPessoaFisica {
   }
 
 
+  public PessoaFisica pesquisarPessoaFisica() {
+    String cpf = JOptionPane.showInputDialog("Informe o CPF da pessoa física: ");
+    PessoaFisica pf = null;
+    for (PessoaFisica pessoaFisica : pfs) {
+      if (pessoaFisica.cpf.equals(cpf)) {
+        pf = pessoaFisica;
+        break;
+      }
+    }
+
+    if (pf != null) {
+      JOptionPane.showMessageDialog(optionPane, "Encontrado: " + pf.nome);
+    }
+    else {
+      JOptionPane.showMessageDialog(optionPane, "Não Encontrado", "", JOptionPane.ERROR_MESSAGE);
+    }
+
+    return pf;
+  }
+
+
   public boolean deletarPessoaFisica() {
     boolean found = false;
     String cpf = JOptionPane.showInputDialog("Informa o CPF da pessoa física: ");
@@ -46,4 +70,6 @@ public class CadastroPessoaFisica {
 
     return found;
   }
+
+
 }
